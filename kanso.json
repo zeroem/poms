@@ -1,0 +1,28 @@
+{
+    "name": "poms",
+    "version": "0.0.1",
+    "description": "My new CouchApp",
+    "load": "lib/app",
+    "modules": "lib",
+    "attachments": "static",
+    "dust": {
+        "templates": "templates"
+    },
+    "duality": {
+        "base_template": "base.html"
+    },
+	"coffee-script": {
+        "modules": ["lib", "tests"]  
+	},
+    "dependencies": {
+        "modules": null,
+        "properties": null,
+        "attachments": null,
+        "settings": null,
+        "duality": null,
+        "dust": null,
+        "duality-dust": null,
+        "couchtypes": null,
+		"coffee-script-precompiler": null
+    }
+}
