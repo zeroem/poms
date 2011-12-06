@@ -14,5 +14,5 @@ module.exports = {
     validate_doc_update: require './validate'
 };
 
-// bind event handlers
+# bind event handlers
 require './events'
