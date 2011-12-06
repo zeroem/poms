@@ -1,7 +1,7 @@
 {
     "name": "poms",
     "version": "0.0.1",
-    "description": "My new CouchApp",
+    "description": "Patterns of Minesweeper",
     "load": "lib/app",
     "modules": "lib",
     "attachments": "static",
