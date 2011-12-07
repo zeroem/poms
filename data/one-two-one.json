@@ -1,0 +1,11 @@
+{
+    "rows": 3,
+    "columns": 3,
+    "squares": [
+        { "row": 2, "column": 1, "value": "1" },
+        { "row": 2, "column": 2, "value": "2" },
+        { "row": 2, "column": 3, "value": "1" },
+        { "row": 3, "column": 1, "value": "b" },
+        { "row": 3, "column": 3, "value": "b" }
+    ]
+}
