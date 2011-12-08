@@ -16,7 +16,7 @@ exports.pattern = (doc,req) ->
 
     doc.display = for row in [0...doc.rows]
         for column in [0...doc.columns]
-            0
+            ""
 
     for square in doc.squares
         doc.display[square.row-1][square.column-1] = square.value;
