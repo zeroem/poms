@@ -1,6 +1,7 @@
 {
     "rows": 3,
     "columns": 3,
+    "name": "One-Two-One",
     "squares": [
         { "row": 2, "column": 1, "value": "1" },
         { "row": 2, "column": 2, "value": "2" },
