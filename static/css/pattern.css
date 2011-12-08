@@ -1,0 +1,57 @@
+
+
+.pattern table {
+	background-color: lightgray;
+	border: 2px solid black;
+}
+
+.pattern tr {
+	height: 28px;
+}
+
+.pattern td {
+	border: 2px solid darkgray;
+	width: 20px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.pattern .value-1 {
+	color: blue;
+}
+
+.pattern .value-2 {
+	color: green;
+}
+
+.pattern .value-3 {
+	color: red;
+}
+
+.pattern .value-4 {
+	color: darkblue;
+}
+
+.pattern .value-5 {
+	color: darkred;
+}
+
+.pattern .value-6 {
+	color: darkred;
+}
+
+.pattern .value-7 {
+	color: black;
+}
+
+.pattern .value-8 {
+	color: darkred;
+}
+
+.pattern .value-s {
+	background-color: green;
+}
+
+.pattern .value-b {
+	background-color: red;
+}

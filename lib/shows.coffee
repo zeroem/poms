@@ -4,7 +4,6 @@
 
 templates = require 'duality/templates'
 
-
 exports.welcome = (doc, req) ->
     title: 'It worked!'
     content: templates.render('welcome.html', req, {})
@@ -14,13 +13,13 @@ exports.not_found = (doc, req) ->
     content: templates.render('404.html', req, {})
 
 exports.pattern = (doc,req) ->
-    squares = doc.squares;
-    doc.squares = for row in [1...doc.rows]
-        for column in [1...doc.columns]
+
+    doc.display = for row in [0...doc.rows]
+        for column in [0...doc.columns]
             0
 
-    for square in squares
-        doc.squares[square.row][square.column] = square.value;
+    for square in doc.squares
+        doc.display[square.row-1][square.column-1] = square.value;
 
     title: doc.name
     content: templates.render('pattern.html', req, {"pattern": doc})

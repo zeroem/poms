@@ -1,11 +1,17 @@
-<h1>{pattern.name}</h1>
+<div class="pattern">
+  <h1>{pattern.name}</h1>
 
-<table>
-  {#pattern.squares}
-  <tr>
-	{#.}
-	<td>{.}</td>
-	{/.}
-  </tr>
-  {/pattern.squares}
-</table>
+  <table>
+	<tbody>
+	  {#pattern.display}
+	  <tr>
+		{#.}
+		<td class="value-{.}">{.}</td>
+		{:else}
+		<td class="value-{.}"></td>		
+		{/.}
+	  </tr>
+	  {/pattern.display}
+	</tbody>
+  </table>
+</div>
