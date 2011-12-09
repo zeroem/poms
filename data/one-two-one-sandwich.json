@@ -5,7 +5,7 @@
     "squares": [
         { "row": 1, "column": 1, "value": "m" },
         { "row": 1, "column": 2, "value": "s" },
-        { "row": 1, "column": 3, "value": "m" }
+        { "row": 1, "column": 3, "value": "m" },
         { "row": 2, "column": 1, "value": "1" },
         { "row": 2, "column": 2, "value": "2" },
         { "row": 2, "column": 3, "value": "1" },
