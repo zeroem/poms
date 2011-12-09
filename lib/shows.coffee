@@ -3,6 +3,7 @@
 ###
 
 templates = require 'duality/templates'
+pattern = require './pattern'
 
 exports.welcome = (doc, req) ->
     title: 'It worked!'
@@ -14,12 +15,7 @@ exports.not_found = (doc, req) ->
 
 exports.pattern = (doc,req) ->
 
-    doc.display = for row in [0...doc.rows]
-        for column in [0...doc.columns]
-            ""
-
-    for square in doc.squares
-        doc.display[square.row-1][square.column-1] = square.value;
+    doc.display = pattern.squaresToBoard doc.rows, doc.columns, doc.squares
 
     title: doc.name
     content: templates.render('pattern.html', req, {"pattern": doc})
