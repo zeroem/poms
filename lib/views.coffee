@@ -13,3 +13,7 @@ exports.mine_count =
                 emit(doc.name,count)
 
 
+exports.pattern_toc =
+    map:
+        (doc) ->
+            emit doc.name, {} if doc.type == "pattern" or doc.squares?

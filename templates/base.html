@@ -3,9 +3,9 @@
   <head> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 	<link href="{baseURL}/static/css/pattern.css" rel="stylesheet" />
-    <title>{title}</title> 
+    <title>{title}{?title} - {/title}Patterns of Minesweeper</title> 
   </head> 
-  <body> 
+  <body>
     <div id="content">
       {content|s}
     </div>
